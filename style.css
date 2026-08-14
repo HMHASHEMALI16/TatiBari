@@ -1,0 +1,296 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+body {
+    background-color: #fcf8f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Opening Preloader Styles */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.opening-logo {
+    max-width: 200px;
+    height: auto;
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    100% { transform: scale(1.05); opacity: 1; }
+}
+
+/* Header & Navigation */
+header {
+    background-color: #800020; /* Deep Burgundy Theme */
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mini-logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.brand-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffd700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(128, 0, 32, 0.85), rgba(0, 0, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80') center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #ffd700;
+    margin-bottom: 5px;
+}
+
+.hero-content .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #1ebc57;
+    transform: scale(1.05);
+}
+
+/* Products Section */
+.products-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.products-section h2 {
+    text-align: center;
+    color: #800020;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #800020;
+    color: #ffd700;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.product-img-holder {
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sample Color Gradients for Sarees */
+.p1 { background-image: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); }
+.p2 { background-image: linear-gradient(135deg, #800020 0%, #b03a2e 100%); }
+.p3 { background-image: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%); }
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.price {
+    color: #666;
+    margin: 5px 0 12px;
+}
+
+.order-btn {
+    display: block;
+    background: #800020;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.order-btn:hover {
+    background: #5e0017;
+}
+
+/* About & Footer */
+.about-section {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-card {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-card h2 {
+    color: #800020;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #1a1a1a;
+    color: #ccc;
+    padding-top: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-info h3, .footer-social h3 {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.footer-info a {
+    color: #25d366;
+    text-decoration: none;
+}
+
+.fb-btn {
+    display: inline-block;
+    background: #1877f2;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyright {
+    text-align: center;
+    background: #111;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+  }
+  
