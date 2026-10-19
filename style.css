@@ -188,10 +188,11 @@ nav a:hover {
     background-position: center;
 }
 
-/* Sample Color Gradients for Sarees */
-.p1 { background-image: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); }
-.p2 { background-image: linear-gradient(135deg, #800020 0%, #b03a2e 100%); }
-.p3 { background-image: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%); }
+/* Placeholder gradients (used only when a saree has no photo yet) */
+.ph-A { background-image: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); }
+.ph-B { background-image: linear-gradient(135deg, #800020 0%, #b03a2e 100%); }
+.ph-C { background-image: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%); }
+.ph-D { background-image: linear-gradient(135deg, #1e6b52 0%, #2f9e77 100%); }
 
 .product-info {
     padding: 15px;
@@ -293,4 +294,45 @@ footer {
         font-size: 2.2rem;
     }
   }
-  
+
+/* ===== Catalog additions ===== */
+.product-img-holder { position: relative; overflow: hidden; background-color: #eee; }
+.product-img-holder img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s; }
+.product-img-holder.clickable { cursor: zoom-in; }
+.product-card:hover .product-img-holder img { transform: scale(1.04); }
+.img-count { position: absolute; left: 10px; bottom: 10px; background: rgba(0,0,0,0.65); color: #fff; font-size: 0.8rem; padding: 2px 8px; border-radius: 12px; }
+.sold-out { position: absolute; inset: 0; background: rgba(0,0,0,0.55); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 700; pointer-events: none; }
+.order-btn.disabled { background: #999; pointer-events: none; }
+
+.toolbar { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { border: 1.5px solid #800020; background: #fff; color: #800020; padding: 6px 16px; border-radius: 20px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+.chip:hover, .chip.active { background: #800020; color: #ffd700; }
+.search { padding: 8px 14px; border: 1.5px solid #ccc; border-radius: 20px; min-width: 240px; font-size: 1rem; }
+.search:focus { outline: none; border-color: #800020; }
+.result-count { color: #777; margin-bottom: 15px; min-height: 1.4em; }
+.empty-msg { text-align: center; color: #777; padding: 30px 0; }
+.load-more-wrap { text-align: center; margin-top: 30px; }
+.load-more { background: #800020; color: #fff; border: 0; padding: 10px 30px; border-radius: 25px; font-weight: 700; font-size: 1rem; cursor: pointer; }
+.load-more:hover { background: #5e0017; }
+
+.lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 5000; display: flex; align-items: center; justify-content: center; }
+.lightbox[hidden] { display: none; }
+.lb-body { max-width: min(92vw, 900px); max-height: 92vh; display: flex; flex-direction: column; gap: 10px; }
+.lb-body img { max-width: 100%; max-height: 78vh; object-fit: contain; border-radius: 6px; margin: 0 auto; }
+.lb-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; color: #fff; flex-wrap: wrap; }
+.lb-order { display: inline-block; padding: 8px 22px; background: #25d366; }
+.lb-order:hover { background: #1ebc57; }
+.lb-close { position: absolute; top: 12px; right: 18px; background: none; border: 0; color: #fff; font-size: 2.4rem; cursor: pointer; line-height: 1; }
+.lb-nav { background: rgba(255,255,255,0.15); border: 0; color: #fff; font-size: 1.6rem; width: 44px; height: 60px; cursor: pointer; border-radius: 6px; margin: 0 8px; flex-shrink: 0; }
+.lb-nav[hidden] { display: none; }
+.lb-nav:hover { background: rgba(255,255,255,0.3); }
+
+@media (max-width: 768px) {
+    .toolbar { flex-direction: column; align-items: stretch; }
+    .search { min-width: 0; width: 100%; }
+    .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .product-img-holder { height: 200px; }
+    .product-info h3 { font-size: 1rem; }
+    .lb-nav { width: 34px; margin: 0 2px; }
+}
