@@ -114,6 +114,9 @@ footer{background:#1a1a1a;color:#ccc;padding-top:44px}
 .footer-links a:hover{color:var(--gold)}
 .footer-social{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
 .fb-btn{display:inline-block;background:#1877f2;color:#fff;padding:8px 16px;border-radius:6px;font-weight:700;text-decoration:none}
+.fb-btn-outline{background:transparent;border:1.5px solid #1877f2;color:#7fb3f7}
+.fb-btn-outline:hover{color:#fff;background:#1877f2}
+.msg-btn{background:#0084ff}
 .copyright{text-align:center;background:#111;padding:14px;font-size:.88rem}
 
 /* MODAL */
