@@ -145,6 +145,14 @@ footer{background:#1a1a1a;color:#ccc;padding-top:44px}
 .drawer-foot .hint{font-size:.8rem;color:var(--mut);text-align:center}
 .drawer-foot .btn{justify-content:center}
 .wa-float{position:fixed;right:20px;bottom:20px;width:58px;height:58px;background:var(--wa);color:#fff;border-radius:50%;display:grid;place-items:center;font-size:1.7rem;z-index:1200;box-shadow:0 8px 20px rgba(37,211,102,.45);animation:floatPulse 2.2s infinite}
+
+/* Floating contact buttons - small */
+.float-btns{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:1200}
+.float-btn{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:1.15rem;box-shadow:0 6px 14px rgba(0,0,0,.25);transition:transform .15s;text-decoration:none}
+.float-btn:hover{transform:scale(1.1)}
+.float-btn.wa{background:#25d366}
+.float-btn.fb{background:#0084ff}
+.float-btn.call{background:#f59e0b}
 @keyframes floatPulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}100%{box-shadow:0 0 0 18px rgba(37,211,102,0)}}
 
 @media (max-width:768px){
