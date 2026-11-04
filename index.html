@@ -1,123 +1,193 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>তাঁতি বাড়ি - ওমর আলী শাড়ি হাউস</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Facebook & Social Media Preview Card -->
-<meta property="og:title" content="তাঁতি বাড়ি - ওমর আলী শাড়ি হাউস">
-<meta property="og:description" content="সিরাজগঞ্জের ঐতিহ্যবাহী তাঁতের খাঁটি শাড়ির সংগ্রহ।">
-<meta property="og:image" content="https://yourusername.github.io/tatibari-repo/social-card.png">
-<meta property="og:image:width" content="1280">
-<meta property="og:image:height" content="640">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>তাঁতি বাড়ি - ওমর আলী শাড়ি হাউস | সিরাজগঞ্জের খাঁটি জামদানি</title>
+<meta name="description" content="তাঁতি বাড়ি (ওমর আলী শাড়ি হাউস), বেলকুচি, সিরাজগঞ্জ। নিজস্ব তাঁতে বোনা খাঁটি জামদানি শাড়ি — ১২২টি ডিজাইন। WhatsApp-এ সরাসরি অর্ডার করুন।">
+<meta property="og:title" content="তাঁতি বাড়ি - ওমর আলী শাড়ি হাউস">
+<meta property="og:description" content="সিরাজগঞ্জের ঐতিহ্যবাহী তাঁতের খাঁটি জামদানি শাড়ির সংগ্রহ — ১২২টি ডিজাইন।">
+<meta property="og:image" content="https://hmhashemali16.github.io/TatiBari/images/hero.jpg">
+<meta property="og:url" content="https://hmhashemali16.github.io/TatiBari/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/tatibari.logo.jpg">
 </head>
 <body>
 
-    <!-- Opening Preloader with Main Logo -->
-    <div id="preloader">
-        <img src="tatibari.logo.png" alt="তাঁতি বাড়ি লোগো" class="opening-logo">
+<!-- Preloader -->
+<div id="preloader">
+  <img src="images/tatibari.logo.jpg" alt="তাঁতি বাড়ি লোগো" class="opening-logo">
+  <div class="loader-text">তাঁতি বাড়ি</div>
+  <small>ওমর আলী শাড়ি হাউস • বেলকুচি, সিরাজগঞ্জ</small>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- Announcement -->
+<div class="announce">✨ খাঁটি জামদানি সংগ্রহ — ১২২টি ডিজাইন ✨ <span class="announce-sub">দাম জানতে WhatsApp করুন • সারাদেশে ক্যাশ অন ডেলিভারি</span></div>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav-inner">
+    <button class="hamburger" id="hamburger" aria-label="menu">☰</button>
+    <a href="#home" class="logo">
+      <img src="images/tatibari.logo.jpg" class="logo-img" alt="তাঁতি বাড়ি">
+      <span>তাঁতি বাড়ি<span class="logo-sub">OMAR ALI SAREE HOUSE</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">হোম <small>HOME</small></a>
+      <a href="#collection">কালেকশন <small>COLLECTION</small></a>
+      <a href="#about">আমাদের সম্পর্কে <small>ABOUT</small></a>
+      <a href="#contact">যোগাযোগ <small>CONTACT</small></a>
+    </nav>
+    <div class="nav-actions">
+      <div class="search-box">
+        <input id="searchInput" type="text" placeholder="শাড়ি খুঁজুন... কোড A01, B23">
+        <span>⌕</span>
+      </div>
+      <button class="icon-btn" id="wishlistBtn" title="Wishlist">♡ <span class="badge" id="wishlistCount">0</span></button>
+      <button class="icon-btn" id="cartBtn" title="Cart">👜 <span class="badge" id="cartCount">0</span></button>
+      <a class="btn btn-wa" href="https://wa.me/8801843004246" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
     </div>
+  </div>
+</header>
 
-    <!-- Navigation Header -->
-    <header>
-        <div class="nav-container">
-            <div class="logo-area">
-                <img src="tatibari.mini.png" alt="তাঁতি বাড়ি মিনি লোগো" class="mini-logo">
-                <span class="brand-name">তাঁতি বাড়ি</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">হোম</a></li>
-                    <li><a href="#collection">কালেকশন</a></li>
-                    <li><a href="#about">আমাদের সম্পর্কে</a></li>
-                    <li><a href="#contact">যোগাযোগ</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-badge">● বেলকুচি, সিরাজগঞ্জ • নিজস্ব তাঁতে বোনা</div>
+    <h1>তাঁতি বাড়ি<br><em>খাঁটি জামদানি, খাঁটি ঐতিহ্য।</em></h1>
+    <p class="hero-sub"><b>ওমর আলী শাড়ি হাউস</b> — সিরাজগঞ্জের তাঁতসমৃদ্ধ এলাকা বেলকুচি থেকে সরাসরি নিজস্ব তাঁতে বোনা খাঁটি জামদানি। তাঁতের আসল ঐতিহ্য + আধুনিক ডিজাইনের মেলবন্ধন।</p>
+    <div class="hero-cta">
+      <a href="#collection" class="btn btn-primary">কালেকশন দেখুন →</a>
+      <a href="https://wa.me/8801843004246?text=আসসালামু%20আলাইকুম!%20জামদানি%20শাড়ির%20দাম%20জানতে%20চাই।" target="_blank" rel="noopener" class="btn btn-wa"><i class="fab fa-whatsapp"></i> দাম জানুন</a>
+    </div>
+    <div class="hero-stats">
+      <div><strong>১২২+</strong><span>ডিজাইন</span></div>
+      <div><strong>A • B • C • D</strong><span>সিরিজ শাড়ি</span></div>
+      <div><strong>100%</strong><span>নিজস্ব তাঁত</span></div>
+      <div><strong>সারাদেশে</strong><span>ডেলিভারি</span></div>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="images/hero.jpg" alt="তাঁতি বাড়ি জামদানি" loading="lazy">
+  </div>
+</section>
 
-    <!-- Hero Banner -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>তাঁতি বাড়ি</h1>
-            <p class="subtitle">ওমর আলী শাড়ি হাউস • বেলকুচি, সিরাজগঞ্জ</p>
-            <p>ঐতিহ্যবাহী তাঁতের খাঁটি শাড়ির বিশ্বস্ত প্রতিষ্ঠান</p>
-            <a href="https://wa.me/8801843004246" target="_blank" class="btn-primary">
-                <i class="fab fa-whatsapp"></i> সরাসরি অর্ডার করুন
-            </a>
-        </div>
-    </section>
+<!-- COLLECTION -->
+<section id="collection" class="products-section">
+  <div class="section-head">
+    <div>
+      <h2>আমাদের জামদানি কালেকশন</h2>
+      <p><span id="resultCount">১২২টি শাড়ি</span> • প্রতিটি এক পিস • পছন্দের কোডে WhatsApp করুন</p>
+    </div>
+    <div class="toolbar">
+      <select id="sortSelect">
+        <option value="code">ক্রম: কোড অনুসারে</option>
+        <option value="new">ক্রম: নতুন আগে</option>
+        <option value="az">ক্রম: A → D</option>
+      </select>
+    </div>
+  </div>
+  <div class="filters" id="filters">
+    <button class="filter-btn active" data-filter="all">সব শাড়ি <small>122</small></button>
+    <button class="filter-btn" data-filter="A">A সিরিজ <small>35</small></button>
+    <button class="filter-btn" data-filter="B">B সিরিজ <small>40</small></button>
+    <button class="filter-btn" data-filter="C">C সিরিজ <small>25</small></button>
+    <button class="filter-btn" data-filter="D">D সিরিজ <small>22</small></button>
+    <button class="filter-btn" data-filter="wishlist">♡ Wishlist</button>
+  </div>
+  <div class="product-grid" id="productGrid"></div>
+  <div class="empty-state" id="emptyState" hidden>
+    <div>🪷</div>
+    <h3>কিছু পাওয়া যায়নি</h3>
+    <p>অন্য কোড দিয়ে খুঁজুন, যেমন A01, B23, C41, D01</p>
+    <button class="btn btn-primary" id="resetBtn">সব শাড়ি দেখুন</button>
+  </div>
+</section>
 
-    <!-- Collection Section -->
-    <section id="collection" class="products-section">
-        <h2>আমাদের জনপ্রিয় শাড়ি কালেকশন</h2>
-        <div class="product-grid">
-            
-            <div class="product-card">
-                <div class="badge">A28</div>
-                <div class="product-img-holder p1"></div>
-                <div class="product-info">
-                    <h3>রয়্যাল ব্লু জামদানি শাড়ি</h3>
-                    <p class="price">প্রিমিয়াম কোয়ালিটি</p>
-                    <a href="https://wa.me/8801843004246?text=আমি%20A28%20কোডের%20শাড়িটি%20কিনতে%20আগ্রহী" class="order-btn" target="_blank">অর্ডার করুন</a>
-                </div>
-            </div>
+<!-- ABOUT -->
+<section id="about" class="about-section">
+  <div class="about-card">
+    <div class="about-img"><img src="images/address.jpg" alt="তাঁতি বাড়ি ঠিকানা" loading="lazy"></div>
+    <div>
+      <h2>আমাদের পরিচয়</h2>
+      <p><strong>তাঁতি বাড়ি (ওমর আলী শাড়ি হাউস)</strong> সিরাজগঞ্জের তাঁতসমৃদ্ধ এলাকা বেলকুচি থেকে সরাসরি নিজস্ব তাঁতে বোনা আকর্ষণীয় ও মানসম্মত জামদানি পরিবেশন করে থাকে। তাঁতের আসল ঐতিহ্য ও আধুনিক ডিজাইনের মেলবন্ধনে আমাদের প্রতিটি শাড়ি প্রস্তুত করা হয়।</p>
+      <ul class="about-points">
+        <li>✓ নিজস্ব তাঁতে বোনা — কোনো মাঝখানে দালাল নাই</li>
+        <li>✓ ১২২টি এক্সক্লুসিভ জামদানি ডিজাইন</li>
+        <li>✓ WhatsApp-এ সরাসরি অর্ডার + ভিডিও দেখে কিনুন</li>
+        <li>✓ সারাদেশে ক্যাশ অন ডেলিভারি</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-            <div class="product-card">
-                <div class="badge">B23</div>
-                <div class="product-img-holder p2"></div>
-                <div class="product-info">
-                    <h3>মেরুন ঐতিহ্যবাহী বেনারসি</h3>
-                    <p class="price">বিশেষ তাঁত কালেকশন</p>
-                    <a href="https://wa.me/8801843004246?text=আমি%20B23%20কোডের%20শাড়িটি%20কিনতে%20আগ্রহী" class="order-btn" target="_blank">অর্ডার করুন</a>
-                </div>
-            </div>
+<!-- CONTACT / FOOTER -->
+<footer id="contact">
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>যোগাযোগের ঠিকানা</h3>
+      <p><i class="fas fa-store"></i> <strong>ওমর আলী শাড়ি হাউস (তাঁতি বাড়ি)</strong></p>
+      <p><i class="fas fa-map-marker-alt"></i> বেলকুচি, সিরাজগঞ্জ</p>
+      <p><i class="fas fa-phone-alt"></i> WhatsApp: <a href="https://wa.me/8801843004246">01843-004246</a></p>
+      <p><i class="fas fa-clock"></i> সকাল ৯টা — রাত ১০টা (প্রতিদিন খোলা)</p>
+    </div>
+    <div class="footer-links">
+      <h3>কুইক লিংক</h3>
+      <a href="#collection">জামদানি কালেকশন</a>
+      <a href="#collection" onclick="document.querySelector('[data-filter=A]').click()">A সিরিজ শাড়ি</a>
+      <a href="#collection" onclick="document.querySelector('[data-filter=B]').click()">B সিরিজ শাড়ি</a>
+      <a href="#collection" onclick="document.querySelector('[data-filter=C]').click()">C সিরিজ শাড়ি</a>
+      <a href="#collection" onclick="document.querySelector('[data-filter=D]').click()">D সিরিজ শাড়ি</a>
+    </div>
+    <div class="footer-social">
+      <h3>সামাজিক যোগাযোগ</h3>
+      <a href="https://www.facebook.com/tatibari.belkuchi" target="_blank" rel="noopener" class="fb-btn"><i class="fab fa-facebook"></i> ফেসবুক পেজ</a>
+      <a href="https://wa.me/8801843004246" target="_blank" rel="noopener" class="btn-wa btn"><i class="fab fa-whatsapp"></i> WhatsApp অর্ডার</a>
+    </div>
+  </div>
+  <div class="copyright"><p>&copy; <span id="year"></span> তাঁতি বাড়ি (ওমর আলী শাড়ি হাউস)। সর্বস্বত্ব সংরক্ষিত।</p></div>
+</footer>
 
-            <div class="product-card">
-                <div class="badge">B31</div>
-                <div class="product-img-holder p3"></div>
-                <div class="product-info">
-                    <h3>সিল্ক গোল্ডেন জর্জেট শাড়ি</h3>
-                    <p class="price">এক্সক্লুসিভ ডিজাইন</p>
-                    <a href="https://wa.me/8801843004246?text=আমি%20B31%20কোডের%20শাড়িটি%20কিনতে%20আগ্রহী" class="order-btn" target="_blank">অর্ডার করুন</a>
-                </div>
-            </div>
+<!-- Quick View Modal -->
+<div class="modal-overlay" id="qvOverlay">
+  <div class="modal">
+    <button class="modal-close" id="qvClose">✕</button>
+    <div class="modal-img"><img id="qvImg" src="" alt=""></div>
+    <div class="modal-info">
+      <div class="badge" id="qvBadge"></div>
+      <h3 id="qvName"></h3>
+      <p class="qv-code" id="qvCode"></p>
+      <p class="price">💬 WhatsApp-এ দাম জানুন</p>
+      <p class="qv-desc">বেলকুচি তাঁতে বোনা খাঁটি জামদানি। ডেলিভারির আগে ভিডিও কল / ভিডিও দেখে নিতে পারবেন।</p>
+      <div class="modal-actions">
+        <a class="btn btn-wa" id="qvOrder" href="#" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp অর্ডার</a>
+        <button class="btn btn-outline" id="qvAddCart">👜 কার্টে যোগ করুন</button>
+        <button class="btn btn-outline" id="qvWishlist">♡ Wishlist</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-        </div>
-    </section>
+<!-- Cart Drawer -->
+<div class="drawer-overlay" id="cartOverlay"></div>
+<aside class="drawer" id="cartDrawer">
+  <div class="drawer-head"><h3>👜 আমার কার্ট</h3><button class="modal-close" id="cartClose">✕</button></div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="drawer-foot">
+    <p class="hint">দাম WhatsApp-এ নিশ্চিত করা হবে — কার্টের কোডগুলো সরাসরি অর্ডার হয়ে যাবে।</p>
+    <a class="btn btn-wa" id="checkoutBtn" href="#" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp-এ অর্ডার করুন</a>
+    <button class="btn btn-outline" id="clearCart">কার্ট খালি করুন</button>
+  </div>
+</aside>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="about-card">
-            <h2>আমাদের পরিচয়</h2>
-            <p><strong>তাঁতি বাড়ি (ওমর আলী শাড়ি হাউস)</strong> সিরাজগঞ্জের তাঁতসমৃদ্ধ এলাকা বেলকুচি থেকে সরাসরি নিজস্ব তাঁতে বোনা আকর্ষণীয় ও মানসম্মত শাড়ি পরিবেশন করে থাকে। তাঁতের আসল ঐতিহ্য ও আধুনিক ডিজাইনের মেলবন্ধনে আমাদের প্রতিটি শাড়ি প্রস্তুত করা হয়।</p>
-        </div>
-    </section>
+<a class="wa-float" href="https://wa.me/8801843004246?text=আসসালামু%20আলাইকুম!%20শাড়ি%20কিনতে%20চাই।" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
-    <!-- Contact & Footer Section -->
-    <footer id="contact">
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3>যোগাযোগের ঠিকানা</h3>
-                <p><i class="fas fa-store"></i> <strong>ওমর আলী শাড়ি হাউস</strong></p>
-                <p><i class="fas fa-map-marker-alt"></i> বেলকুচি, সিরাজগঞ্জ</p>
-                <p><i class="fas fa-phone-alt"></i> হোয়াটসঅ্যাপ: <a href="https://wa.me/8801843004246">01843004246</a></p>
-            </div>
-            <div class="footer-social">
-                <h3>সামাজিক যোগাযোগ</h3>
-                <a href="https://www.facebook.com/tatibari.belkuchi" target="_blank" class="fb-btn">
-                    <i class="fab fa-facebook"></i> ফেসবুক পেজ ভিজিট করুন
-                </a>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; ২০২৬ তাঁতি বাড়ি। সর্বস্বত্ব সংরক্ষিত।</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="products.js"></script>
+<script src="script.js"></script>
 </body>
-                      </html>
-                      
+</html>
