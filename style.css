@@ -197,7 +197,6 @@ footer::before{content:"";display:block;height:4px;background:linear-gradient(90
   .nav-links{display:none;width:100%;flex-direction:column;padding:10px 0;gap:12px}
   .nav-links.open{display:flex}
   .hamburger{display:block}
-  .search-box input{width:104px}
   .logo{font-size:1.15rem}
   .hero{grid-template-columns:1fr;padding:30px 18px}
   .hero h1{font-size:2.4rem}

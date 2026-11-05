@@ -68,10 +68,9 @@ document.querySelectorAll(".filter-btn").forEach((b) => {
     render();
   });
 });
-$("#searchInput").addEventListener("input", (e) => { searchQ = e.target.value; render(); });
 $("#sortSelect").addEventListener("change", (e) => { sortMode = e.target.value; render(); });
 $("#resetBtn").addEventListener("click", () => {
-  searchQ = ""; $("#searchInput").value = ""; activeFilter = "all";
+  searchQ = ""; activeFilter = "all";
   document.querySelector('[data-filter="all"]').click();
 });
 
