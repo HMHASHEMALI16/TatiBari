@@ -46,10 +46,8 @@ function render() {
       </div>
       <div class="product-info">
         <h3>${p.name}</h3>
-        <p class="price">💬 WhatsApp-এ দাম জানুন</p>
-        <p class="sku">${p.series} সিরিজ • কোড ${p.code}</p>
         <div class="card-btns">
-          <a class="order-btn" href="${waLink(p.code)}" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> অর্ডার করুন</a>
+          <a class="order-btn" href="${waLink(p.code)}" target="_blank" rel="noopener">অর্ডার করুন</a>
           <button class="mini-btn" title="কার্টে যোগ করুন" onclick="addToCart('${p.code}',this)">👜</button>
           <button class="mini-btn ${wishlist.has(p.code) ? "done" : ""}" title="Wishlist" onclick="toggleWish('${p.code}',this)">${wishlist.has(p.code) ? "♥" : "♡"}</button>
         </div>
