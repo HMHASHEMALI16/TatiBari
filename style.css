@@ -60,6 +60,7 @@ img{max-width:100%;display:block}
 .hero{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;padding:50px 25px 35px}
 .hero-badge{display:inline-block;background:#fff;border:1px solid #ead9c8;color:var(--burg);padding:5px 14px;border-radius:99px;font-size:.8rem;font-weight:600;margin-bottom:12px}
 .hero h1{font-family:'Fraunces',serif;font-size:3.4rem;line-height:1.05;color:var(--burg)}
+.hero h1 .hero-tag{display:block;font-size:1.7rem;line-height:1.2;color:#a07d1b;font-weight:600;margin-top:4px}
 .hero h1 em{color:#a07d1b;font-weight:600}
 .hero-sub{margin:14px 0 20px;color:#444;font-size:1.02rem;max-width:560px}
 .hero-cta{display:flex;gap:12px;flex-wrap:wrap}
@@ -200,6 +201,7 @@ footer::before{content:"";display:block;height:4px;background:linear-gradient(90
   .logo{font-size:1.15rem}
   .hero{grid-template-columns:1fr;padding:30px 18px}
   .hero h1{font-size:2.4rem}
+  .hero h1 .hero-tag{font-size:1.2rem}
   .hero-stats{grid-template-columns:repeat(2,1fr)}
   .about-card{grid-template-columns:1fr}
   .modal{grid-template-columns:1fr}
