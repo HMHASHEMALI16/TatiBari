@@ -26,10 +26,9 @@
   <div class="loader-bar"><span></span></div>
 </div>
 
-<!-- NAV -->
+<!-- NAV - logo only -->
 <header class="nav">
   <div class="nav-inner">
-    <button class="hamburger" id="hamburger" aria-label="menu">☰</button>
     <a href="#home" class="logo">
       <img src="images/tatibari.logo.jpg" class="logo-img" alt="তাঁতি বাড়ি">
       <span class="logo-text">তাঁতি বাড়ি</span>
@@ -67,11 +66,17 @@
       <p><span id="resultCount">১২২টি শাড়ি</span> • প্রতিটি এক পিস • পছন্দের কোডে WhatsApp করুন</p>
     </div>
     <div class="toolbar">
+      <div class="toolbar-search">
+        <i class="fas fa-search"></i>
+        <input id="searchInput" type="text" placeholder="শাড়ি খুঁজুন... কোড A01, B23" autocomplete="off">
+      </div>
       <select id="sortSelect">
         <option value="code">ক্রম: কোড অনুসারে</option>
         <option value="new">ক্রম: নতুন আগে</option>
         <option value="az">ক্রম: A → D</option>
       </select>
+      <button id="wishlistBtn" class="cart-open-btn" title="Wishlist">♡ Wishlist <span id="wishlistCount" class="mini-count">০</span></button>
+      <button id="cartBtn" class="cart-open-btn cart-primary" title="Cart">👜 কার্ট <span id="cartCount" class="mini-count">০</span></button>
     </div>
   </div>
   <div class="filters" id="filters">
